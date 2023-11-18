@@ -1,30 +1,35 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Formulário de Criação de Usuário</title>
-</head>
-<body>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Formulário de Criação de Usuário</title>
+  </head>
+  <body>
+    <h2>Criar Novo Usuário</h2>
 
-<h2>Criar Novo Usuário</h2>
+    <form action="src/salvar.php" method="post">
+      <div>
+        <label for="nome">Nome de Usuário:</label>
+        <input type="text" id="nome" name="nome" required />
+      </div>
 
-<form action="src/salvar.php" method="post">
-  <div>
-    <label for="nome">Nome de Usuário:</label>
-    <input type="text" id="nome" name="nome" required>
-  </div>
+      <div>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required />
+      </div>
 
-  <div>
-    <label for="senha">Senha:</label>
-    <input type="password" id="senha" name="senha" required>
-  </div>
+      <div>
+        <label for="confirm_senha">Confirmar Senha:</label>
+        <input
+          type="password"
+          id="confirm_senha"
+          name="confirm_senha"
+          required
+        />
+      </div>
 
-  <div>
-    <label for="confirm_senha">Confirmar Senha:</label>
-    <input type="password" id="confirm_senha" name="confirm_senha" required>
-  </div>
-
-  <input type="submit" value="Criar Usuário">
-</form>
-
-</body>
+      <input type="submit" value="Criar Usuário" />
+    </form>
+  </body>
 </html>
