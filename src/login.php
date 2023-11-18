@@ -14,9 +14,9 @@ if(isset($parametros['nome']) && isset($parametros['senha'])){
 
     if ($resultado->num_rows > 0) {
 
-        echo "usu·rio logado!";
+        echo "usu√°rio logado!";
     } else {
-        echo "usu·rio n„o encontrado";
+        echo "usu√°rio n√£o encontrado";
     }
 }
 
