@@ -41,3 +41,11 @@ if(isset($parametros['nome']) && isset($parametros['senha'])){
 
 </body>
 </html>
+<button type="button" onclick="VoltarParaLogin()">Entre</button>
+  </body>
+</html>
+<script>   
+  function VoltarParaLogin(){         
+    window.location.href = "http://localhost/A3-SISTEMAS-DISTRIBUIDOS/";     
+    }
+</script>
