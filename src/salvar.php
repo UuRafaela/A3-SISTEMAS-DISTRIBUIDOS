@@ -29,6 +29,22 @@ if (isset($parametros['nome']) && isset($parametros['senha'])) {
 
 <head>
     <title>Cadastro</title>
+
+    <style>
+        button {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: blue;
+            color: white;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
 </head>
 
 <body>
