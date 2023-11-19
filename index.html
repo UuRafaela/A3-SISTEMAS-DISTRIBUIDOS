@@ -1,28 +1,52 @@
 <!DOCTYPE html>
+
 <html>
   <head>
-    <title>Formulario de Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Formulário de Login</title>
+
+    <style>
+      button {
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: rgb(0, 4, 218);
+        color: white;
+        margin-top: 10px;
+      }
+      button:hover {
+        background-color: rgb(15, 0, 100);
+      }
+    </style>
   </head>
+
   <body>
     <h2>Login</h2>
     <form action="src/login.php" method="post">
       <div>
-        <label for="nome">Usuario:</label>
-        <input type="text" id="nome" name="nome" required>
+        <label for="nome">Usuário:</label>
+        <input type="text" id="nome" name="nome" required />
       </div>
+
       <div>
         <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" required>
+        <input type="password" id="senha" name="senha" required />
       </div>
+
       <div>
         <button type="submit" value="Login">Login</button>
       </div>
     </form>
-       <button type="button" onclick="IrParaCadastro()">Cadastre-se</button>
+
+    <button type="button" onclick="IrParaCadastro()">Cadastre-se</button>
   </body>
-</html>
-<script>   
-  function IrParaCadastro(){         
-    window.location.href = "http://localhost/A3-SISTEMAS-DISTRIBUIDOS/cadastro.html";     
+
+  <script>
+    function IrParaCadastro() {
+      window.location.href =
+        "http://localhost/A3-SISTEMAS-DISTRIBUIDOS/cadastro.html";
     }
-</script>
+  </script>
+</html>

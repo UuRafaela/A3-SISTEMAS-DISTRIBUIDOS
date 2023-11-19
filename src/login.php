@@ -4,7 +4,7 @@ require_once('conexao.php');
 
 $parametros = $_POST;
 
-if(isset($parametros['nome']) && isset($parametros['senha'])){
+if (isset($parametros['nome']) && isset($parametros['senha'])) {
     $nome_formulario = $parametros['nome'];
     $senha_formulario = $parametros['senha'];
 
@@ -25,18 +25,21 @@ if(isset($parametros['nome']) && isset($parametros['senha'])){
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Login</title>
 </head>
+
 <body>
 
-<button onclick="goBack()">Voltar</button>
+    <button onclick="goBack()">Voltar</button>
 
-<script>
-    function goBack() {
-        window.history.back();
-    }
-</script>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 
 </body>
+
 </html>

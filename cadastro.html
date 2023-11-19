@@ -1,16 +1,59 @@
-
 <!DOCTYPE html>
+
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Formulario de Criacao de Usuario</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Formulário de Criação de Usuário</title>
+
+    <style>
+      button {
+        /* Estilos para os botões */
+        padding: 10px 20px; /* Espaçamento interno */
+        border: none; /* Remover a borda */
+        cursor: pointer; /* Mostrar cursor de apontar ao passar por cima */
+        border-radius: 5px; /* Borda arredondada */
+        margin-top: 10px; /* Espaçamento superior */
+      }
+
+      input[type="submit"] {
+        /* Estilo para o botão "Criar Usuário" */
+        padding: 10px 20px; /* Espaçamento interno */
+        border: none; /* Remover a borda */
+        cursor: pointer; /* Mostrar cursor de apontar ao passar por cima */
+        border-radius: 5px; /* Borda arredondada */
+        margin-top: 10px; /* Espaçamento superior */
+        background-color: blue; /* Cor de fundo azul */
+        color: white; /* Cor do texto branca */
+      }
+
+      input[type="submit"]:hover {
+        background-color: darkblue; /* Mudar a cor quando o mouse passa por cima */
+      }
+
+      button[type="button"] {
+        /* Estilo para o botão "Voltar" */
+        padding: 10px 20px; /* Espaçamento interno */
+        border: none; /* Remover a borda */
+        cursor: pointer; /* Mostrar cursor de apontar ao passar por cima */
+        border-radius: 5px; /* Borda arredondada */
+        margin-top: 10px; /* Espaçamento superior */
+        background-color: green; /* Cor de fundo verde */
+        color: white; /* Cor do texto branca */
+      }
+
+      button[type="button"]:hover {
+        background-color: darkgreen; /* Mudar a cor quando o mouse passa por cima */
+      }
+    </style>
   </head>
+
   <body>
-    <h2>Criar Novo Usuario</h2>
+    <h2>Criar Novo Usuário</h2>
 
     <form action="src/salvar.php" method="post">
       <div>
-        <label for="nome">Nome de Usuario:</label>
+        <label for="nome">Nome de Usuário:</label>
         <input type="text" id="nome" name="nome" required />
       </div>
 
@@ -31,13 +74,13 @@
 
       <input type="submit" value="Criar Usuário" />
     </form>
+
+    <button type="button" onclick="VoltarParaLogin()">Voltar</button>
+
+    <script>
+      function VoltarParaLogin() {
+        window.location.href = "http://localhost/A3-SISTEMAS-DISTRIBUIDOS/";
+      }
+    </script>
   </body>
 </html>
-<button type="button" onclick="VoltarParaLogin()">Voltar</button>
-  </body>
-</html>
-<script>   
-  function VoltarParaLogin(){         
-    window.location.href = "http://localhost/A3-SISTEMAS-DISTRIBUIDOS/";     
-    }
-</script>
